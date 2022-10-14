@@ -7,6 +7,55 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/content1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kocka1"
+        android:id="@+id/dobo1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kocka1"
+        android:id="@+id/dobo2"/>
+</LinearLayout>
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content1"
+        android:gravity="center"
+        android:id="@+id/content2"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 KOCKA"
+            android:id="@+id/egyKocka"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 KOCKA"
+            android:id="@+id/kettoKocka"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOBÁS"
+            android:id="@+id/dobas"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:id="@+id/reset"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dobasokText"
+        android:layout_below="@+id/content2"
+        android:layout_marginTop="5dp"/>
 </RelativeLayout>
